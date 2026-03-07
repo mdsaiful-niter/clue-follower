@@ -19,6 +19,7 @@ export function FilterBar({ sortBy, onSortChange, pricingFilter, onPricingChange
     { value: null, label: "All" },
     { value: "free", label: "Free" },
     { value: "freemium", label: "Freemium" },
+    { value: "free_trial", label: "Free Trial" },
     { value: "paid", label: "Paid" },
   ];
 

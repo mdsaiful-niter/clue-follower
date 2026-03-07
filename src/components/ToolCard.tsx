@@ -57,7 +57,7 @@ export function ToolCard({ tool, index = 0 }: ToolCardProps) {
       <div className="mt-4 flex items-center justify-between gap-2">
         <div className="flex items-center gap-2">
           <Badge variant="outline" className={pricingColors[tool.pricingType]}>
-            {tool.pricingType}
+            {pricingLabels[tool.pricingType] || tool.pricingType}
           </Badge>
           <div className="flex items-center gap-1 text-xs text-muted-foreground">
             <div className="h-1.5 w-16 rounded-full bg-secondary overflow-hidden">

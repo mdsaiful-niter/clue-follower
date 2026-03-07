@@ -60,7 +60,7 @@ export function useToolsFilter() {
   []);
 
   const topTools = useMemo(() =>
-    [...aiTools].sort((a, b) => b.popularityScore - a.popularityScore).slice(0, 20),
+    [...aiTools].sort((a, b) => b.popularityScore - a.popularityScore).slice(0, 50),
   []);
 
   return {

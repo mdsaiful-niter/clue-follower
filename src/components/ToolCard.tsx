@@ -12,7 +12,15 @@ interface ToolCardProps {
 const pricingColors: Record<string, string> = {
   free: "bg-success/20 text-success border-success/30",
   freemium: "bg-primary/20 text-primary border-primary/30",
+  free_trial: "bg-accent/20 text-accent border-accent/30",
   paid: "bg-warning/20 text-warning border-warning/30",
+};
+
+const pricingLabels: Record<string, string> = {
+  free: "Free",
+  freemium: "Freemium",
+  free_trial: "Free Trial",
+  paid: "Paid",
 };
 
 export function ToolCard({ tool, index = 0 }: ToolCardProps) {

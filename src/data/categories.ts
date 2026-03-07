@@ -1,0 +1,27 @@
+import { Category } from "@/types/ai-tools";
+
+export const categories: Category[] = [
+  { id: "chat-ai", name: "Chat AI", icon: "💬", toolCount: 0, description: "Conversational AI assistants and chatbots" },
+  { id: "image-generation", name: "Image Generation", icon: "🎨", toolCount: 0, description: "AI-powered image creation and editing" },
+  { id: "video-generation", name: "Video Generation", icon: "🎬", toolCount: 0, description: "AI video creation and editing tools" },
+  { id: "audio-ai", name: "Audio AI", icon: "🎙️", toolCount: 0, description: "Voice synthesis and audio processing" },
+  { id: "music-ai", name: "Music AI", icon: "🎵", toolCount: 0, description: "AI music composition and generation" },
+  { id: "presentation-ai", name: "Presentation AI", icon: "📊", toolCount: 0, description: "AI-powered slide and presentation creation" },
+  { id: "writing-ai", name: "Writing AI", icon: "✍️", toolCount: 0, description: "AI writing assistants and content generators" },
+  { id: "coding-ai", name: "Coding AI", icon: "💻", toolCount: 0, description: "AI code assistants and dev tools" },
+  { id: "productivity-ai", name: "Productivity AI", icon: "⚡", toolCount: 0, description: "AI tools for productivity and workflow" },
+  { id: "research-ai", name: "Research AI", icon: "🔬", toolCount: 0, description: "AI-powered research and analysis" },
+  { id: "marketing-ai", name: "Marketing AI", icon: "📢", toolCount: 0, description: "AI marketing and advertising tools" },
+  { id: "design-ai", name: "Design AI", icon: "🎯", toolCount: 0, description: "AI design and creative tools" },
+  { id: "website-builder", name: "Website Builder AI", icon: "🌐", toolCount: 0, description: "AI-powered website creation" },
+  { id: "avatar-ai", name: "Avatar AI", icon: "🧑‍💻", toolCount: 0, description: "AI avatar and digital human creation" },
+  { id: "data-analysis", name: "Data Analysis AI", icon: "📈", toolCount: 0, description: "AI data analytics and insights" },
+  { id: "automation-ai", name: "Automation AI", icon: "🤖", toolCount: 0, description: "AI workflow automation" },
+  { id: "document-ai", name: "Document AI", icon: "📄", toolCount: 0, description: "AI document processing and analysis" },
+  { id: "meeting-ai", name: "Meeting AI", icon: "📹", toolCount: 0, description: "AI meeting assistants and transcription" },
+  { id: "education-ai", name: "Education AI", icon: "🎓", toolCount: 0, description: "AI learning and tutoring tools" },
+  { id: "social-media-ai", name: "Social Media AI", icon: "📱", toolCount: 0, description: "AI social media management" },
+  { id: "seo-ai", name: "SEO AI", icon: "🔍", toolCount: 0, description: "AI search engine optimization" },
+  { id: "ecommerce-ai", name: "E-commerce AI", icon: "🛒", toolCount: 0, description: "AI e-commerce and shopping tools" },
+  { id: "ai-agents", name: "AI Agents", icon: "🧠", toolCount: 0, description: "Autonomous AI agents and frameworks" },
+];

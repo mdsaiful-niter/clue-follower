@@ -1,4 +1,4 @@
-export type PricingType = "free" | "freemium" | "paid";
+export type PricingType = "free" | "freemium" | "free_trial" | "paid";
 
 export interface AITool {
   id: string;

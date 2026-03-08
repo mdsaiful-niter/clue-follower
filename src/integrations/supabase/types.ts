@@ -14,7 +14,75 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      ai_tools: {
+        Row: {
+          category: string
+          created_at: string
+          description: string
+          id: string
+          is_new: boolean
+          logo_url: string | null
+          name: string
+          popularity_score: number
+          pricing_type: Database["public"]["Enums"]["pricing_type"]
+          source: string | null
+          trending: boolean
+          updated_at: string
+          website_url: string
+        }
+        Insert: {
+          category: string
+          created_at?: string
+          description: string
+          id?: string
+          is_new?: boolean
+          logo_url?: string | null
+          name: string
+          popularity_score?: number
+          pricing_type?: Database["public"]["Enums"]["pricing_type"]
+          source?: string | null
+          trending?: boolean
+          updated_at?: string
+          website_url: string
+        }
+        Update: {
+          category?: string
+          created_at?: string
+          description?: string
+          id?: string
+          is_new?: boolean
+          logo_url?: string | null
+          name?: string
+          popularity_score?: number
+          pricing_type?: Database["public"]["Enums"]["pricing_type"]
+          source?: string | null
+          trending?: boolean
+          updated_at?: string
+          website_url?: string
+        }
+        Relationships: []
+      }
+      categories: {
+        Row: {
+          description: string
+          icon: string
+          id: string
+          name: string
+        }
+        Insert: {
+          description?: string
+          icon: string
+          id: string
+          name: string
+        }
+        Update: {
+          description?: string
+          icon?: string
+          id?: string
+          name?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
@@ -23,7 +91,7 @@ export type Database = {
       [_ in never]: never
     }
     Enums: {
-      [_ in never]: never
+      pricing_type: "free" | "freemium" | "free_trial" | "paid"
     }
     CompositeTypes: {
       [_ in never]: never
@@ -150,6 +218,8 @@ export type CompositeTypes<
 
 export const Constants = {
   public: {
-    Enums: {},
+    Enums: {
+      pricing_type: ["free", "freemium", "free_trial", "paid"],
+    },
   },
 } as const

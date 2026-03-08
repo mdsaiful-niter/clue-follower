@@ -1,6 +1,6 @@
 import { AITool } from "@/types/ai-tools";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
+
 import { ExternalLink, TrendingUp, Sparkles } from "lucide-react";
 import { motion } from "framer-motion";
 
@@ -27,11 +27,14 @@ export function ToolCard({ tool, index = 0 }: ToolCardProps) {
   const initials = tool.name.split(" ").map(w => w[0]).join("").slice(0, 2).toUpperCase();
 
   return (
-    <motion.div
+    <motion.a
+      href={tool.websiteUrl}
+      target="_blank"
+      rel="noopener noreferrer"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: Math.min(index * 0.03, 0.5), duration: 0.4 }}
-      className="group relative card-gradient rounded-lg border border-border/50 p-5 hover:border-primary/40 transition-all duration-300 hover:glow-primary"
+      className="group relative card-gradient rounded-lg border border-border/50 p-5 hover:border-primary/40 transition-all duration-300 hover:glow-primary cursor-pointer block"
     >
       {tool.trending && (
         <div className="absolute -top-2 -right-2 flex items-center gap-1 rounded-full bg-accent/20 border border-accent/30 px-2 py-0.5 text-xs text-accent">
@@ -69,17 +72,8 @@ export function ToolCard({ tool, index = 0 }: ToolCardProps) {
             <span>{tool.popularityScore}</span>
           </div>
         </div>
-        <Button
-          size="sm"
-          variant="ghost"
-          className="text-muted-foreground hover:text-primary"
-          asChild
-        >
-          <a href={tool.websiteUrl} target="_blank" rel="noopener noreferrer">
-            <ExternalLink className="h-4 w-4" />
-          </a>
-        </Button>
+        <ExternalLink className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors" />
       </div>
-    </motion.div>
+    </motion.a>
   );
 }

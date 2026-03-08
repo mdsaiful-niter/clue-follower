@@ -14,7 +14,7 @@ export function Navbar() {
           <div className="flex h-8 w-8 sm:h-9 sm:w-9 items-center justify-center rounded-lg bg-primary text-primary-foreground">
             <Cpu className="h-4 w-4 sm:h-5 sm:w-5" />
           </div>
-          <span className="font-display font-bold text-base sm:text-lg text-foreground">AI Directory</span>
+          <span className="font-display font-bold text-base sm:text-lg text-foreground">Doraemon's Poket</span>
         </Link>
 
         {/* Desktop nav */}

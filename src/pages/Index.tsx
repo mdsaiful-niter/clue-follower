@@ -6,6 +6,7 @@ import { FilterBar } from "@/components/FilterBar";
 import { ToolCard } from "@/components/ToolCard";
 import { useToolsFilter } from "@/hooks/useToolsFilter";
 import { Button } from "@/components/ui/button";
+import { SeedButton } from "@/components/SeedButton";
 
 const Index = () => {
   const {

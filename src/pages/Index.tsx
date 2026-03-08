@@ -127,6 +127,7 @@ const Index = () => {
         <div className="container mx-auto px-4 text-center text-sm text-muted-foreground">
           <p>AI Directory — Discover {totalTools}+ AI Tools across {categoriesWithCount.length} categories</p>
           <p className="mt-2 text-xs">Updated daily with new AI tools. No tool is ever removed.</p>
+          <p className="mt-2 text-xs">Created by <a href="/about" className="text-primary hover:underline font-medium">Saiful Islam</a></p>
         </div>
       </footer>
     </div>

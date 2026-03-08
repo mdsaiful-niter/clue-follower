@@ -752,445 +752,172 @@ export const aiTools: AITool[] = [
   t("Hevy AI", "AI workout tracker and planner", "fitness-ai", "freemium", 70, "https://hevyapp.com"),
   t("Caliber AI", "AI strength training coach", "fitness-ai", "freemium", 65, "https://caliber.app"),
 
-  // ===================== MORE CHAT AI =====================
-  t("xAI Grok 2", "xAI's advanced Grok 2 model with enhanced reasoning", "chat-ai", "freemium", 88, "https://x.ai", true, true),
-  t("xAI Grok 3", "xAI's latest Grok 3 model with superior intelligence", "chat-ai", "paid", 90, "https://x.ai/grok-3", true, true),
-  t("Le Chat by Mistral", "Mistral's conversational AI assistant", "chat-ai", "free", 80, "https://chat.mistral.ai", false, true),
-  t("Claude 3.5 Sonnet", "Anthropic's balanced speed and intelligence model", "chat-ai", "freemium", 96, "https://claude.ai", true),
-  t("GPT-4o", "OpenAI's fastest multimodal model", "chat-ai", "freemium", 97, "https://chatgpt.com", true),
-  t("GPT-4o Mini", "OpenAI's small efficient model for everyday tasks", "chat-ai", "free", 90, "https://chatgpt.com"),
-  t("Gemini 2.0", "Google's latest multimodal AI with agentic capabilities", "chat-ai", "freemium", 94, "https://gemini.google.com", true, true),
+  // ===================== ADDITIONAL CHAT AI & LLM MODELS =====================
+  t("LMArena (LMSYS)", "Open platform for LLM benchmarking and chatbot arena", "chat-ai", "free", 91, "https://lmarena.ai", true, true),
+  t("Qwen 2.5", "Alibaba's powerful open-source LLM", "chat-ai", "free", 88, "https://qwenlm.github.io", true, true),
+  t("DeepSeek V3", "High-performance open-source reasoning model", "chat-ai", "free", 90, "https://deepseek.com", true, true),
+  t("DeepSeek R1", "DeepSeek's advanced reasoning model", "chat-ai", "free", 89, "https://deepseek.com/r1", true, true),
+  t("Llama 3.1 405B", "Meta's largest open-source LLM", "chat-ai", "free", 93, "https://llama.meta.com/llama3.1", true),
+  t("Llama 3.3 70B", "Meta's latest efficient open-source model", "chat-ai", "free", 91, "https://llama.meta.com/llama3.3", true, true),
+  t("Mistral Large 2", "Mistral's flagship commercial model", "chat-ai", "freemium", 87, "https://mistral.ai/large", true),
+  t("Mixtral 8x22B", "Mistral's powerful mixture-of-experts model", "chat-ai", "free", 85, "https://mistral.ai/mixtral"),
+  t("Yi Lightning", "01.AI's fast and capable model", "chat-ai", "free", 78, "https://01.ai", false, true),
+  t("Phi-4", "Microsoft's small but powerful reasoning model", "chat-ai", "free", 84, "https://huggingface.co/microsoft/phi-4", false, true),
+  t("Gemma 2 27B", "Google's open-source lightweight model", "chat-ai", "free", 80, "https://ai.google.dev/gemma"),
+  t("Jamba 1.5", "AI21's hybrid SSM-Transformer model", "chat-ai", "freemium", 74, "https://ai21.com"),
+  t("DBRX", "Databricks' open-source MoE model", "chat-ai", "free", 76, "https://databricks.com/dbrx"),
+  t("Nemotron 70B", "NVIDIA's chat-optimized model", "chat-ai", "free", 79, "https://build.nvidia.com", false, true),
+  t("InternLM 2.5", "Shanghai AI Lab's multilingual model", "chat-ai", "free", 75, "https://internlm.org"),
   t("Reka AI", "Multimodal AI assistant with vision capabilities", "chat-ai", "freemium", 72, "https://reka.ai", false, true),
   t("Coze", "ByteDance's AI chatbot builder platform", "chat-ai", "free", 70, "https://coze.com"),
-  t("You.com AI", "AI search and productivity assistant", "chat-ai", "freemium", 74, "https://you.com"),
   t("Forefront AI", "AI chat with access to multiple models", "chat-ai", "freemium", 68, "https://forefront.ai"),
   t("Jan AI", "Open-source offline AI chat client", "chat-ai", "free", 65, "https://jan.ai", false, true),
   t("LM Studio", "Run open-source LLMs locally on your computer", "chat-ai", "free", 78, "https://lmstudio.ai", false, true),
-  t("Ollama", "Run open-source LLMs locally with ease", "chat-ai", "free", 82, "https://ollama.com", true, true),
   t("AnythingLLM", "All-in-one AI desktop app for local LLMs", "chat-ai", "free", 70, "https://anythingllm.com", false, true),
   t("Open Router", "Unified API for hundreds of AI models", "chat-ai", "freemium", 75, "https://openrouter.ai", false, true),
 
-  // ===================== MORE IMAGE GENERATION =====================
-  t("Grok Image Gen", "xAI's image generation powered by Aurora", "image-generation", "freemium", 82, "https://x.ai", false, true),
-  t("Google Imagen 3", "Google's latest text-to-image model", "image-generation", "freemium", 86, "https://deepmind.google/imagen", false, true),
-  t("Dall-E 3 in ChatGPT", "Integrated DALL-E 3 within ChatGPT Plus", "image-generation", "freemium", 92, "https://chatgpt.com"),
-  t("Tensor.Art", "Free AI art generation community platform", "image-generation", "free", 72, "https://tensor.art"),
-  t("Freepik AI", "AI image generator by Freepik", "image-generation", "freemium", 76, "https://freepik.com/ai/image-generator"),
-  t("Dreamina by ByteDance", "AI image generation by ByteDance", "image-generation", "free", 68, "https://dreamina.com"),
-  t("Gencraft", "AI art generation with artistic styles", "image-generation", "freemium", 64, "https://gencraft.com"),
-  t("Picso AI", "AI text-to-image art generator", "image-generation", "freemium", 60, "https://picso.ai"),
-  t("Shakker AI", "AI image generation with fine-tuned models", "image-generation", "freemium", 62, "https://shakker.ai"),
-  t("SeaArt AI", "Community-driven AI art generation", "image-generation", "free", 70, "https://seaart.ai"),
-
-  // ===================== MORE VIDEO GENERATION =====================
-  t("Kling AI Pro", "Advanced AI video with motion brush", "video-generation", "freemium", 84, "https://klingai.com", false, true),
-  t("Vidu AI", "AI video generation from China", "video-generation", "freemium", 72, "https://vidu.studio", false, true),
-  t("Genmo AI", "AI creative video generation", "video-generation", "freemium", 70, "https://genmo.ai"),
-  t("Wan Video by Alibaba", "Alibaba's open-source video generation", "video-generation", "free", 68, "https://github.com/Wan-Video", false, true),
-  t("Morph Studio", "AI cinematic video creation", "video-generation", "freemium", 66, "https://morphstudio.com", false, true),
-  t("Viggle AI", "AI video generation with character motion", "video-generation", "freemium", 74, "https://viggle.ai", false, true),
-  t("PixVerse", "AI video creation with stylized effects", "video-generation", "freemium", 71, "https://pixverse.ai", false, true),
-  t("Hedra AI", "AI talking head video creation", "video-generation", "freemium", 69, "https://hedra.com", false, true),
-  t("Captions AI", "AI-powered video captions and editing", "video-generation", "freemium", 78, "https://captions.ai", true),
-
-  // ===================== MORE CODING AI =====================
-  t("Claude Code", "Anthropic's agentic coding tool for terminal", "coding-ai", "freemium", 88, "https://claude.ai", true, true),
+  // ===================== ADDITIONAL CODING AI =====================
+  t("Claude Code", "Anthropic's agentic coding tool for terminal", "coding-ai", "freemium", 88, "https://docs.anthropic.com/claude-code", true, true),
   t("Gemini Code Assist", "Google's AI coding assistant", "coding-ai", "freemium", 82, "https://cloud.google.com/gemini/docs/codeassist", false, true),
   t("JetBrains AI", "AI assistant integrated in JetBrains IDEs", "coding-ai", "free_trial", 80, "https://jetbrains.com/ai"),
   t("Zed AI", "AI-native code editor with fast performance", "coding-ai", "free", 76, "https://zed.dev", false, true),
   t("Cline", "Autonomous AI coding agent in VS Code", "coding-ai", "free", 79, "https://github.com/cline/cline", false, true),
   t("Roo Code", "AI coding agent fork with multi-model support", "coding-ai", "free", 72, "https://github.com/RooVetGit/Roo-Code", false, true),
-  t("OpenHands", "Open-source AI software development agent", "coding-ai", "free", 74, "https://github.com/All-Hands-AI/OpenHands", false, true),
   t("Vercel AI SDK", "TypeScript toolkit for building AI applications", "coding-ai", "free", 78, "https://sdk.vercel.ai"),
-  t("Replit Agent", "AI agent that builds full apps from prompts", "coding-ai", "freemium", 85, "https://replit.com", true, true),
-  t("GitLab Duo", "AI DevSecOps assistant by GitLab", "coding-ai", "free_trial", 70, "https://gitlab.com"),
+  t("Replit Agent", "AI agent that builds full apps from prompts", "coding-ai", "freemium", 85, "https://replit.com/agent", true, true),
+  t("GitLab Duo", "AI DevSecOps assistant by GitLab", "coding-ai", "free_trial", 70, "https://about.gitlab.com/gitlab-duo"),
   t("Poolside", "AI code generation for enterprises", "coding-ai", "paid", 68, "https://poolside.ai", false, true),
-  t("Codium AI", "AI test generation for developers", "coding-ai", "freemium", 71, "https://codium.ai"),
   t("Fine.dev", "AI development agent for teams", "coding-ai", "free_trial", 66, "https://fine.dev", false, true),
 
-  // ===================== MORE PRODUCTIVITY AI =====================
+  // ===================== ADDITIONAL IMAGE GENERATION =====================
+  t("Flux 1.1 Pro", "Black Forest Labs' top image model", "image-generation", "freemium", 90, "https://blackforestlabs.ai/flux-pro", true, true),
+  t("Recraft V3", "AI design tool with brand-consistent generation", "image-generation", "freemium", 82, "https://recraft.ai/v3", false, true),
+  t("Google Imagen 3", "Google's latest text-to-image model", "image-generation", "freemium", 86, "https://deepmind.google/imagen3", false, true),
+  t("Tensor.Art", "Free AI art generation community platform", "image-generation", "free", 72, "https://tensor.art"),
+  t("Freepik AI", "AI image generator by Freepik", "image-generation", "freemium", 76, "https://freepik.com/ai/image-generator"),
+  t("Dreamina", "AI image generation by ByteDance", "image-generation", "free", 68, "https://dreamina.com"),
+  t("SeaArt AI", "Community-driven AI art generation", "image-generation", "free", 70, "https://seaart.ai"),
+  t("Napkin AI", "Turn text into visual diagrams automatically", "image-generation", "freemium", 77, "https://napkin.ai", false, true),
+
+  // ===================== ADDITIONAL VIDEO AI =====================
+  t("Vidu AI", "AI video generation from China", "video-generation", "freemium", 72, "https://vidu.studio", false, true),
+  t("Genmo AI", "AI creative video generation", "video-generation", "freemium", 70, "https://genmo.ai"),
+  t("Wan Video", "Alibaba's open-source video generation", "video-generation", "free", 68, "https://github.com/Wan-Video", false, true),
+  t("Morph Studio", "AI cinematic video creation", "video-generation", "freemium", 66, "https://morphstudio.com", false, true),
+  t("Viggle AI", "AI video generation with character motion", "video-generation", "freemium", 74, "https://viggle.ai", false, true),
+  t("PixVerse", "AI video creation with stylized effects", "video-generation", "freemium", 71, "https://pixverse.ai", false, true),
+  t("Hedra AI", "AI talking head video creation", "video-generation", "freemium", 69, "https://hedra.com", false, true),
+  t("Captions AI", "AI-powered video captions and editing", "video-generation", "freemium", 78, "https://captions.ai", true),
+  t("Veo 2", "Google DeepMind's advanced video model", "video-generation", "freemium", 88, "https://deepmind.google/veo2", true, true),
+
+  // ===================== ADDITIONAL AUDIO AI =====================
+  t("NotebookLM", "Google's AI research assistant with audio overview", "audio-ai", "free", 90, "https://notebooklm.google.com", true, true),
+  t("Suno v4", "Latest AI music creation model", "audio-ai", "freemium", 88, "https://suno.com/v4", true, true),
+  t("Hume AI", "Emotionally intelligent voice AI", "audio-ai", "freemium", 78, "https://hume.ai", false, true),
+  t("Sesame AI", "Conversational AI with emotional voice", "audio-ai", "freemium", 76, "https://sesame.com", false, true),
+  t("F5-TTS", "Open-source text-to-speech model", "audio-ai", "free", 72, "https://github.com/SWivid/F5-TTS"),
+
+  // ===================== ADDITIONAL PRODUCTIVITY AI =====================
   t("Arc Browser AI", "AI-powered web browser with smart features", "productivity-ai", "free", 75, "https://arc.net"),
   t("Perplexity Pages", "AI-powered article creation from research", "productivity-ai", "freemium", 80, "https://perplexity.ai/pages"),
   t("Apple Intelligence", "Apple's on-device AI suite for iPhone/Mac", "productivity-ai", "free", 88, "https://apple.com/apple-intelligence", true, true),
   t("Samsung Galaxy AI", "Samsung's integrated AI features", "productivity-ai", "free", 82, "https://samsung.com/galaxy-ai"),
   t("Microsoft 365 Copilot", "AI assistant across Microsoft Office apps", "productivity-ai", "paid", 92, "https://microsoft.com/microsoft-365/copilot", true),
-  t("Google Workspace AI", "AI features across Google Docs, Sheets, Gmail", "productivity-ai", "freemium", 88, "https://workspace.google.com"),
+  t("Google Workspace AI", "AI features across Google Docs, Sheets, Gmail", "productivity-ai", "freemium", 88, "https://workspace.google.com/ai"),
   t("Slack AI", "AI-powered search and summaries in Slack", "productivity-ai", "paid", 78, "https://slack.com/features/ai"),
-  t("Zapier AI", "AI-powered workflow automation", "automation-ai", "freemium", 84, "https://zapier.com", true),
-  t("Make AI", "AI visual automation platform", "automation-ai", "freemium", 76, "https://make.com"),
 
-  // ===================== MORE DESIGN AI =====================
-  t("Figma AI", "AI design features in Figma", "design-ai", "freemium", 90, "https://figma.com", true, true),
-  t("Framer AI", "AI-powered website builder and designer", "design-ai", "freemium", 86, "https://framer.com", true),
+  // ===================== ADDITIONAL DESIGN AI =====================
   t("Relume AI", "AI wireframe and sitemap generator", "design-ai", "freemium", 78, "https://relume.io"),
-  t("Uizard AI", "AI UI design from text and screenshots", "design-ai", "freemium", 74, "https://uizard.io"),
-  t("Galileo AI", "AI UI design generation", "design-ai", "free_trial", 76, "https://usegalileo.ai"),
-  t("Khroma", "AI color palette generator", "design-ai", "free", 65, "https://khroma.co"),
-  t("Looka AI", "AI logo and brand design", "design-ai", "freemium", 72, "https://looka.com"),
-  t("Brandmark AI", "AI logo generator and branding", "design-ai", "paid", 68, "https://brandmark.io"),
 
-  // ===================== MORE AI AGENTS =====================
-  t("AutoGPT", "Autonomous AI agent by Significant Gravitas", "ai-agents", "free", 85, "https://autogpt.net", true),
-  t("BabyAGI", "AI-powered autonomous task management agent", "ai-agents", "free", 72, "https://github.com/yoheinakajima/babyagi"),
-  t("AgentGPT", "AI autonomous agent in the browser", "ai-agents", "free", 74, "https://agentgpt.reworkd.ai"),
-  t("CrewAI", "Multi-agent AI framework for orchestration", "ai-agents", "free", 80, "https://crewai.com", false, true),
-  t("LangChain", "Framework for building LLM-powered apps", "ai-agents", "free", 88, "https://langchain.com", true),
+  // ===================== ADDITIONAL AI AGENTS =====================
   t("LlamaIndex", "Data framework for LLM applications", "ai-agents", "free", 82, "https://llamaindex.ai"),
-  t("Flowise AI", "Open-source no-code AI agent builder", "ai-agents", "free", 76, "https://flowiseai.com"),
   t("Dify", "Open-source LLM app development platform", "ai-agents", "free", 78, "https://dify.ai", false, true),
-  t("n8n AI", "AI workflow automation with agents", "ai-agents", "free", 80, "https://n8n.io", true, true),
-  t("Botpress AI", "AI chatbot and agent builder", "ai-agents", "freemium", 74, "https://botpress.com"),
-  t("Voiceflow", "AI agent builder for customer support", "ai-agents", "freemium", 72, "https://voiceflow.com"),
-  t("Relevance AI", "AI agent builder for business teams", "ai-agents", "freemium", 70, "https://relevanceai.com"),
-  t("Superagent AI", "Open-source AI agent framework", "ai-agents", "free", 66, "https://superagent.sh"),
-  t("Semantic Kernel", "Microsoft's AI orchestration SDK", "ai-agents", "free", 74, "https://github.com/microsoft/semantic-kernel"),
-  t("Haystack AI", "Open-source NLP framework by deepset", "ai-agents", "free", 72, "https://haystack.deepset.ai"),
   t("Composio", "AI agent tooling and integrations platform", "ai-agents", "freemium", 68, "https://composio.dev", false, true),
-  t("Lindy AI", "Personal AI agent for daily tasks", "ai-agents", "freemium", 70, "https://lindy.ai", false, true),
+  t("Manus AI", "General-purpose AI agent that delivers results", "ai-agents", "freemium", 87, "https://manus.im", true, true),
+  t("OpenAI Operator", "AI agent that browses the web for you", "ai-agents", "paid", 85, "https://operator.chatgpt.com", true, true),
+  t("Rabbit R1", "AI hardware agent for task automation", "ai-agents", "paid", 72, "https://rabbit.tech"),
+  t("Induced AI", "AI browser automation agent", "ai-agents", "freemium", 73, "https://induced.ai"),
+  t("Hyperwrite AI", "AI personal writing and browsing assistant", "ai-agents", "freemium", 76, "https://hyperwriteai.com"),
 
-  // ===================== MORE DOCUMENT AI =====================
-  t("ChatPDF", "Chat with any PDF document using AI", "document-ai", "freemium", 80, "https://chatpdf.com"),
-  t("PDF.ai", "AI PDF reader and analyzer", "document-ai", "freemium", 76, "https://pdf.ai"),
-  t("Humata AI", "AI document summarizer and Q&A", "document-ai", "freemium", 74, "https://humata.ai"),
-  t("Sharly AI", "AI document analysis for teams", "document-ai", "freemium", 68, "https://sharly.ai"),
-  t("Unriddle", "AI document understanding and research", "document-ai", "freemium", 72, "https://unriddle.ai"),
-  t("Docalysis", "AI document analysis and chat", "document-ai", "freemium", 64, "https://docalysis.com"),
-
-  // ===================== MORE EDUCATION AI =====================
-  t("Khan Academy Khanmigo", "AI tutor powered by GPT-4", "education-ai", "freemium", 88, "https://khanacademy.org/khan-labs", true),
-  t("Duolingo Max", "AI language learning with GPT-4", "education-ai", "paid", 86, "https://duolingo.com"),
-  t("Photomath AI", "AI math problem solver with camera", "education-ai", "freemium", 82, "https://photomath.com"),
-  t("Brainly AI", "AI homework help and tutoring", "education-ai", "freemium", 78, "https://brainly.com"),
-  t("Quizlet AI", "AI-powered flashcards and study tools", "education-ai", "freemium", 80, "https://quizlet.com"),
-  t("Socratic by Google", "AI homework helper with visual explanations", "education-ai", "free", 76, "https://socratic.org"),
-  t("Chegg AI", "AI study and homework assistance", "education-ai", "freemium", 74, "https://chegg.com"),
-  t("Course Hero AI", "AI course material and study help", "education-ai", "freemium", 72, "https://coursehero.com"),
-  t("Synthesis AI Tutor", "AI STEM tutoring for kids", "education-ai", "paid", 70, "https://synthesis.is"),
-  t("Gradescope AI", "AI-assisted grading platform", "education-ai", "free_trial", 68, "https://gradescope.com"),
-
-  // ===================== MORE PHOTO EDITING AI =====================
-  t("Remove.bg", "AI background removal from photos", "photo-editing-ai", "freemium", 88, "https://remove.bg"),
-  t("Cleanup.pictures", "AI object removal from photos", "photo-editing-ai", "freemium", 82, "https://cleanup.pictures"),
-  t("Remini", "AI photo enhancement and restoration", "photo-editing-ai", "freemium", 84, "https://remini.ai"),
-  t("Topaz Photo AI", "AI photo noise reduction and upscaling", "photo-editing-ai", "free_trial", 86, "https://topazlabs.com"),
-  t("Luminar Neo AI", "AI photo editing with sky replacement", "photo-editing-ai", "paid", 80, "https://skylum.com"),
-  t("Lensa AI", "AI portrait and selfie enhancement", "photo-editing-ai", "freemium", 76, "https://lensa-ai.com"),
-  t("Photoroom AI", "AI product photo background editor", "photo-editing-ai", "freemium", 78, "https://photoroom.com"),
-  t("Magic Eraser", "AI object removal tool", "photo-editing-ai", "freemium", 72, "https://magiceraser.io"),
-  t("Let's Enhance", "AI image upscaling and enhancement", "photo-editing-ai", "freemium", 74, "https://letsenhance.io"),
-  t("Cutout.Pro", "AI photo and video editing suite", "photo-editing-ai", "freemium", 70, "https://cutout.pro"),
-
-  // ===================== MORE 3D & AR AI =====================
-  t("Meshy AI", "AI 3D model generation from text", "3d-ai", "freemium", 80, "https://meshy.ai", true, true),
-  t("Tripo AI", "AI 3D model generation in seconds", "3d-ai", "freemium", 76, "https://tripo3d.ai", false, true),
-  t("Genie by Luma", "AI 3D object generation", "3d-ai", "freemium", 74, "https://lumalabs.ai/genie"),
-  t("Rodin by Hyper3D", "AI 3D asset generation", "3d-ai", "freemium", 72, "https://hyper3d.ai", false, true),
-  t("CSM AI", "AI 3D world creation from images", "3d-ai", "freemium", 70, "https://csm.ai"),
-  t("Spline AI", "AI 3D design tool in the browser", "3d-ai", "freemium", 78, "https://spline.design"),
-
-  // ===================== MORE SOCIAL MEDIA AI =====================
-  t("Opus Clip Pro", "AI video repurposing for social media", "social-media-ai", "freemium", 82, "https://opus.pro"),
-  t("Taplio", "AI LinkedIn content creation", "social-media-ai", "freemium", 76, "https://taplio.com"),
-  t("Tweet Hunter", "AI Twitter/X growth and content tool", "social-media-ai", "freemium", 74, "https://tweethunter.io"),
-  t("Publer AI", "AI social media scheduling and creation", "social-media-ai", "freemium", 70, "https://publer.io"),
-  t("FeedHive AI", "AI social media content recycling", "social-media-ai", "freemium", 68, "https://feedhive.com"),
-  t("Tribescaler", "AI hook generator for social media", "social-media-ai", "freemium", 64, "https://tribescaler.com"),
-
-  // ===================== MORE SEO AI =====================
-  t("Surfer SEO AI", "AI SEO content optimization", "seo-ai", "free_trial", 84, "https://surferseo.com"),
-  t("Clearscope", "AI content optimization for SEO", "seo-ai", "paid", 80, "https://clearscope.io"),
-  t("MarketMuse", "AI content strategy and optimization", "seo-ai", "freemium", 76, "https://marketmuse.com"),
-  t("NeuronWriter", "AI SEO content editor with NLP", "seo-ai", "freemium", 72, "https://neuronwriter.com"),
-  t("Scalenut AI", "AI SEO content research and writing", "seo-ai", "free_trial", 74, "https://scalenut.com"),
-  t("RankIQ", "AI SEO blog content optimizer", "seo-ai", "paid", 70, "https://rankiq.com"),
-
-  // ===================== MORE WEBSITE BUILDER AI =====================
-  t("Wix AI", "AI website builder with smart design", "website-builder", "freemium", 84, "https://wix.com"),
-  t("Hostinger AI", "AI website builder with hosting", "website-builder", "freemium", 78, "https://hostinger.com"),
-  t("10Web AI", "AI WordPress website builder", "website-builder", "freemium", 74, "https://10web.io"),
-  t("Durable AI", "AI business website builder in 30 seconds", "website-builder", "freemium", 76, "https://durable.co"),
-  t("Hocoos AI", "AI website builder for businesses", "website-builder", "freemium", 70, "https://hocoos.com"),
-  t("Jimdo AI", "AI website creator for small businesses", "website-builder", "freemium", 68, "https://jimdo.com"),
-  t("Mixo AI", "AI landing page and website builder", "website-builder", "freemium", 72, "https://mixo.io"),
-  t("Zyro AI", "AI website builder with templates", "website-builder", "freemium", 66, "https://zyro.com"),
-
-  // ===================== MORE EMAIL AI =====================
-  t("Lavender AI", "AI email coaching for sales", "email-ai", "freemium", 76, "https://lavender.ai"),
-  t("Mailchimp AI", "AI email marketing automation", "email-ai", "freemium", 82, "https://mailchimp.com"),
-  t("Smartwriter AI", "AI personalized email outreach", "email-ai", "freemium", 72, "https://smartwriter.ai"),
-  t("Instantly AI", "AI cold email outreach platform", "email-ai", "free_trial", 78, "https://instantly.ai"),
-  t("Compose AI", "AI email autocomplete extension", "email-ai", "free", 68, "https://compose.ai"),
-
-  // ===================== MORE SALES AI =====================
-  t("Apollo AI", "AI sales intelligence and engagement", "sales-ai", "freemium", 84, "https://apollo.io"),
-  t("Clay AI", "AI data enrichment for sales teams", "sales-ai", "free_trial", 80, "https://clay.com", false, true),
-  t("Seamless AI", "AI B2B contact and lead finder", "sales-ai", "freemium", 76, "https://seamless.ai"),
-  t("Regie AI", "AI sales content generation", "sales-ai", "free_trial", 72, "https://regie.ai"),
-  t("Warmly AI", "AI website visitor identification for sales", "sales-ai", "freemium", 70, "https://warmly.ai"),
-
-  // ===================== MORE CUSTOMER SUPPORT AI =====================
-  t("Intercom Fin", "AI customer service agent by Intercom", "customer-support-ai", "paid", 86, "https://intercom.com", true),
-  t("Zendesk AI", "AI customer support automation", "customer-support-ai", "paid", 84, "https://zendesk.com"),
-  t("Freshdesk AI", "AI-powered customer support by Freshworks", "customer-support-ai", "freemium", 78, "https://freshdesk.com"),
-  t("Tidio AI", "AI customer service chatbot", "customer-support-ai", "freemium", 74, "https://tidio.com"),
-  t("Ada AI", "AI customer service automation platform", "customer-support-ai", "paid", 80, "https://ada.cx"),
-  t("Drift AI", "AI conversational sales and support", "customer-support-ai", "paid", 76, "https://drift.com"),
-
-  // ===================== MORE TRANSLATION AI =====================
-  t("DeepL", "AI translation with superior accuracy", "translation-ai", "freemium", 92, "https://deepl.com", true),
-  t("Google Translate AI", "AI-powered translation in 130+ languages", "translation-ai", "free", 90, "https://translate.google.com"),
-  t("Smartcat AI", "AI translation management platform", "translation-ai", "freemium", 74, "https://smartcat.com"),
-  t("Unbabel", "AI-powered human translation", "translation-ai", "paid", 72, "https://unbabel.com"),
-  t("Phrase AI", "AI localization and translation platform", "translation-ai", "free_trial", 70, "https://phrase.com"),
-  t("Lokalise AI", "AI translation for software products", "translation-ai", "freemium", 68, "https://lokalise.com"),
-
-  // ===================== MORE MEETING AI =====================
-  t("Fireflies AI", "AI meeting transcription and analysis", "meeting-ai", "freemium", 84, "https://fireflies.ai"),
-  t("tl;dv", "AI meeting recorder for Zoom and Google Meet", "meeting-ai", "freemium", 80, "https://tldv.io"),
-  t("Fathom AI", "Free AI meeting assistant", "meeting-ai", "free", 82, "https://fathom.video"),
-  t("Grain AI", "AI meeting highlights and summaries", "meeting-ai", "freemium", 74, "https://grain.com"),
-  t("Avoma", "AI meeting assistant for revenue teams", "meeting-ai", "freemium", 72, "https://avoma.com"),
-  t("Fellow AI", "AI meeting notes and action items", "meeting-ai", "freemium", 76, "https://fellow.app"),
-  t("Sembly AI", "AI meeting assistant with smart notes", "meeting-ai", "freemium", 70, "https://sembly.ai"),
-  t("Read AI", "AI meeting copilot for all platforms", "meeting-ai", "freemium", 78, "https://read.ai"),
-  t("Otter Meeting", "AI live meeting transcription", "meeting-ai", "freemium", 86, "https://otter.ai"),
-
-  // ===================== MORE AVATAR AI =====================
-  t("Synthesia Avatars", "AI digital avatars for video", "avatar-ai", "free_trial", 88, "https://synthesia.io"),
-  t("HeyGen Avatars", "Realistic AI avatars with lip sync", "avatar-ai", "freemium", 86, "https://heygen.com"),
-  t("Soul Machines", "Autonomous AI digital people", "avatar-ai", "paid", 78, "https://soulmachines.com"),
-  t("Colossyan Avatars", "AI avatars for enterprise video", "avatar-ai", "free_trial", 74, "https://colossyan.com"),
-  t("DeepBrain AI", "AI avatar video generation", "avatar-ai", "free_trial", 76, "https://deepbrain.io"),
-  t("Elai Avatars", "AI presenter avatars", "avatar-ai", "free_trial", 70, "https://elai.io"),
-  t("Ready Player Me", "Cross-platform AI avatar creation", "avatar-ai", "free", 80, "https://readyplayer.me"),
-  t("NVIDIA Omniverse Avatar", "AI digital human by NVIDIA", "avatar-ai", "free_trial", 82, "https://nvidia.com/en-us/omniverse"),
-
-  // ===================== MORE FINANCE AI =====================
-  t("Bloomberg GPT", "AI for financial data analysis", "finance-ai", "paid", 85, "https://bloomberg.com"),
-  t("Alpaca AI", "AI stock trading API", "finance-ai", "freemium", 78, "https://alpaca.markets"),
-  t("Kavout", "AI stock analysis and scoring", "finance-ai", "freemium", 72, "https://kavout.com"),
-  t("Wealthfront AI", "AI automated investing", "finance-ai", "free", 80, "https://wealthfront.com"),
-  t("Betterment AI", "AI robo-advisor for investing", "finance-ai", "freemium", 78, "https://betterment.com"),
-  t("Mint AI", "AI personal finance management", "finance-ai", "free", 76, "https://mint.intuit.com"),
-  t("Plaid AI", "AI financial data connectivity", "finance-ai", "freemium", 74, "https://plaid.com"),
-  t("Kensho AI", "AI analytics for financial markets", "finance-ai", "paid", 70, "https://kensho.com"),
-
-  // ===================== MORE HEALTHCARE AI =====================
-  t("Google Health AI", "AI healthcare research by Google", "healthcare-ai", "free", 82, "https://health.google"),
-  t("Ada Health", "AI symptom checker and health guide", "healthcare-ai", "free", 80, "https://ada.com"),
-  t("Babylon Health AI", "AI health consultation service", "healthcare-ai", "freemium", 76, "https://babylonhealth.com"),
-  t("PathAI", "AI pathology and diagnostics", "healthcare-ai", "paid", 74, "https://pathai.com"),
-  t("Viz.ai", "AI clinical decision support", "healthcare-ai", "paid", 78, "https://viz.ai"),
-  t("Butterfly Network AI", "AI ultrasound imaging", "healthcare-ai", "paid", 72, "https://butterflynetwork.com"),
-
-  // ===================== MORE DATA ANALYSIS AI =====================
-  t("Julius AI", "AI data analysis and visualization", "data-analysis", "freemium", 82, "https://julius.ai", true),
-  t("Obviously AI", "No-code AI prediction and analytics", "data-analysis", "free_trial", 74, "https://obviously.ai"),
-  t("MindsDB", "AI tables for database predictions", "data-analysis", "free", 76, "https://mindsdb.com"),
-  t("Akkio AI", "No-code AI for business analytics", "data-analysis", "freemium", 72, "https://akkio.com"),
-  t("Polymer AI", "AI data visualization from spreadsheets", "data-analysis", "freemium", 70, "https://polymersearch.com"),
-  t("MonkeyLearn", "AI text analytics and classification", "data-analysis", "freemium", 68, "https://monkeylearn.com"),
-  t("Rows AI", "AI spreadsheet with data analysis", "data-analysis", "freemium", 66, "https://rows.com"),
-  t("ChatCSV", "Chat with your CSV data using AI", "data-analysis", "free", 64, "https://chatcsv.co"),
-
-  // ===================== MORE CYBERSECURITY AI =====================
-  t("Darktrace AI", "AI cybersecurity threat detection", "cybersecurity-ai", "paid", 86, "https://darktrace.com"),
-  t("CrowdStrike AI", "AI endpoint security and threat hunting", "cybersecurity-ai", "paid", 88, "https://crowdstrike.com"),
-  t("SentinelOne AI", "AI autonomous endpoint protection", "cybersecurity-ai", "paid", 84, "https://sentinelone.com"),
-  t("Vectra AI", "AI network detection and response", "cybersecurity-ai", "paid", 78, "https://vectra.ai"),
-  t("Abnormal Security", "AI email security platform", "cybersecurity-ai", "paid", 80, "https://abnormalsecurity.com"),
-
-  // ===================== MORE HR AI =====================
-  t("HireVue AI", "AI video interviewing and assessment", "hr-ai", "paid", 78, "https://hirevue.com"),
-  t("Eightfold AI", "AI talent intelligence platform", "hr-ai", "paid", 80, "https://eightfold.ai"),
-  t("Pymetrics", "AI behavioral assessment for hiring", "hr-ai", "paid", 74, "https://pymetrics.ai"),
-  t("Textio", "AI writing for inclusive job listings", "hr-ai", "freemium", 72, "https://textio.com"),
-  t("Paradox AI", "AI recruiting assistant (Olivia)", "hr-ai", "paid", 76, "https://paradox.ai"),
-  t("Fetcher AI", "AI-powered candidate sourcing", "hr-ai", "free_trial", 70, "https://fetcher.ai"),
-
-  // ===================== MORE E-COMMERCE AI =====================
-  t("Shopify Magic", "AI commerce assistant by Shopify", "ecommerce-ai", "freemium", 86, "https://shopify.com"),
-  t("Nosto AI", "AI personalization for e-commerce", "ecommerce-ai", "free_trial", 78, "https://nosto.com"),
-  t("Clerk.io", "AI search and recommendations for shops", "ecommerce-ai", "free_trial", 74, "https://clerk.io"),
-  t("Syte AI", "AI visual search for retail", "ecommerce-ai", "paid", 72, "https://syte.ai"),
-  t("Algolia AI", "AI search and discovery for websites", "ecommerce-ai", "freemium", 80, "https://algolia.com"),
-  t("Copy.ai for E-commerce", "AI product description generator", "ecommerce-ai", "freemium", 76, "https://copy.ai"),
-
-  // ===================== MORE LEGAL AI =====================
-  t("Harvey AI", "AI legal research and drafting", "legal-ai", "paid", 84, "https://harvey.ai", true),
-  t("CoCounsel", "AI legal assistant by Thomson Reuters", "legal-ai", "paid", 82, "https://casetext.com"),
-  t("Spellbook AI", "AI contract drafting for lawyers", "legal-ai", "free_trial", 78, "https://spellbook.legal"),
-  t("Luminance", "AI platform for legal document review", "legal-ai", "paid", 76, "https://luminance.com"),
-  t("Ironclad AI", "AI contract lifecycle management", "legal-ai", "paid", 74, "https://ironcladapp.com"),
-  t("Legalese Decoder", "AI legal jargon simplifier", "legal-ai", "freemium", 68, "https://legalesedecoder.com"),
-
-  // ===================== MORE REAL ESTATE AI =====================
-  t("Zillow AI", "AI home valuation and recommendations", "real-estate-ai", "free", 84, "https://zillow.com"),
-  t("Redfin AI", "AI-powered real estate search", "real-estate-ai", "free", 80, "https://redfin.com"),
-  t("Compass AI", "AI real estate agent platform", "real-estate-ai", "free", 78, "https://compass.com"),
-  t("Matterport AI", "AI 3D virtual property tours", "real-estate-ai", "freemium", 76, "https://matterport.com"),
-  t("Rex AI", "AI real estate marketing", "real-estate-ai", "paid", 70, "https://rexhomes.com"),
-  t("Skyline AI", "AI real estate investment analysis", "real-estate-ai", "paid", 72, "https://skyline.ai"),
-
-  // ===================== MORE CHAT AI & LLM PLATFORMS =====================
-  t("LMArena (LMSYS)", "Open platform for LLM benchmarking and chatbot arena", "chat-ai", "free", 91, "https://lmarena.ai", true, true),
-  t("Qwen 2.5", "Alibaba's powerful open-source LLM", "chat-ai", "free", 88, "https://qwenlm.github.io", true, true),
-  t("DeepSeek V3", "High-performance open-source reasoning model", "chat-ai", "free", 90, "https://deepseek.com", true, true),
-  t("DeepSeek R1", "DeepSeek's advanced reasoning model", "chat-ai", "free", 89, "https://deepseek.com", true, true),
-  t("Llama 3.1 405B", "Meta's largest open-source LLM", "chat-ai", "free", 93, "https://llama.meta.com", true),
-  t("Llama 3.3 70B", "Meta's latest efficient open-source model", "chat-ai", "free", 91, "https://llama.meta.com", true, true),
-  t("Mistral Large 2", "Mistral's flagship commercial model", "chat-ai", "freemium", 87, "https://mistral.ai", true),
-  t("Mixtral 8x22B", "Mistral's powerful mixture-of-experts model", "chat-ai", "free", 85, "https://mistral.ai"),
-  t("Yi Lightning", "01.AI's fast and capable model", "chat-ai", "free", 78, "https://01.ai", false, true),
-  t("Command R+", "Cohere's enterprise-grade RAG model", "chat-ai", "freemium", 82, "https://cohere.com"),
-  t("Phi-4", "Microsoft's small but powerful reasoning model", "chat-ai", "free", 84, "https://huggingface.co/microsoft/phi-4", false, true),
-  t("Gemma 2 27B", "Google's open-source lightweight model", "chat-ai", "free", 80, "https://ai.google.dev/gemma"),
-  t("Jamba 1.5", "AI21's hybrid SSM-Transformer model", "chat-ai", "freemium", 74, "https://ai21.com"),
-  t("DBRX", "Databricks' open-source MoE model", "chat-ai", "free", 76, "https://databricks.com"),
-  t("Nemotron 70B", "NVIDIA's chat-optimized model", "chat-ai", "free", 79, "https://build.nvidia.com", false, true),
-  t("InternLM 2.5", "Shanghai AI Lab's multilingual model", "chat-ai", "free", 75, "https://internlm.org"),
-  t("Athene 70B", "Nexusflow's function-calling champion model", "chat-ai", "free", 77, "https://nexusflow.ai"),
-  t("WizardLM 2", "Microsoft's instruction-following model", "chat-ai", "free", 76, "https://wizardlm.github.io"),
-  t("OpenChat 3.6", "Open-source chat model rivaling GPT-3.5", "chat-ai", "free", 73, "https://openchat.team"),
-  t("Nous Hermes 2", "Community fine-tuned powerful chat model", "chat-ai", "free", 74, "https://nousresearch.com"),
-
-  // ===================== MORE CODING AI =====================
-  t("Windsurf", "AI-powered IDE by Codeium for agentic coding", "coding-ai", "freemium", 88, "https://codeium.com/windsurf", true, true),
-  t("Bolt.new", "AI full-stack app builder in browser", "coding-ai", "freemium", 86, "https://bolt.new", true, true),
-  t("v0 by Vercel", "AI UI component generator by Vercel", "coding-ai", "freemium", 89, "https://v0.dev", true),
-  t("Lovable", "AI full-stack web app builder", "coding-ai", "freemium", 87, "https://lovable.dev", true, true),
-  t("Devin", "World's first autonomous AI software engineer", "coding-ai", "paid", 90, "https://devin.ai", true, true),
-  t("Augment Code", "AI coding assistant for large codebases", "coding-ai", "freemium", 78, "https://augmentcode.com", false, true),
-  t("Continue", "Open-source AI code assistant for any IDE", "coding-ai", "free", 80, "https://continue.dev"),
-  t("Aider", "AI pair programming in your terminal", "coding-ai", "free", 82, "https://aider.chat"),
-  t("Sourcegraph Cody", "AI code assistant with full codebase context", "coding-ai", "freemium", 83, "https://sourcegraph.com/cody"),
-  t("Codium AI", "AI test generation and code integrity", "coding-ai", "freemium", 79, "https://codium.ai"),
-  t("Sweep AI", "AI junior developer for GitHub repos", "coding-ai", "free", 74, "https://sweep.dev"),
-  t("OpenHands", "Open-source AI software developer platform", "coding-ai", "free", 76, "https://all-hands.dev", false, true),
-
-  // ===================== MORE IMAGE GENERATION =====================
-  t("Flux 1.1 Pro", "Black Forest Labs' top image model", "image-generation", "freemium", 90, "https://blackforestlabs.ai", true, true),
-  t("Recraft V3", "AI design tool with brand-consistent generation", "image-generation", "freemium", 82, "https://recraft.ai", false, true),
-  t("Ideogram 2.0", "Best AI text rendering in images", "image-generation", "freemium", 85, "https://ideogram.ai", true),
-  t("Playground v3", "Advanced AI image generation platform", "image-generation", "freemium", 78, "https://playground.com"),
-  t("Krea AI", "Real-time AI image generation and enhancement", "image-generation", "freemium", 80, "https://krea.ai", false, true),
-  t("Artbreeder", "Collaborative AI art creation platform", "image-generation", "freemium", 74, "https://artbreeder.com"),
-  t("Napkin AI", "Turn text into visual diagrams automatically", "image-generation", "freemium", 77, "https://napkin.ai", false, true),
-
-  // ===================== MORE VIDEO AI =====================
-  t("Sora", "OpenAI's text-to-video generation model", "video-ai", "paid", 95, "https://openai.com/sora", true, true),
-  t("Kling AI", "Kuaishou's cinematic video generation", "video-ai", "freemium", 86, "https://klingai.com", true, true),
-  t("Minimax Hailuo", "Chinese AI video generation platform", "video-ai", "free", 83, "https://hailuoai.video", false, true),
-  t("Luma Dream Machine", "Fast high-quality AI video generation", "video-ai", "freemium", 84, "https://lumalabs.ai/dream-machine"),
-  t("Veo 2", "Google DeepMind's advanced video model", "video-ai", "freemium", 88, "https://deepmind.google/veo", true, true),
-  t("Pika 1.5", "AI video generation with cinematic effects", "video-ai", "freemium", 82, "https://pika.art"),
-  t("Haiper AI", "AI video creation with motion control", "video-ai", "freemium", 75, "https://haiper.ai"),
-  t("Genmo Mochi", "Open-source AI video generation model", "video-ai", "free", 76, "https://genmo.ai", false, true),
-
-  // ===================== MORE AUDIO & MUSIC AI =====================
-  t("NotebookLM", "Google's AI research assistant with audio overview", "audio-ai", "free", 90, "https://notebooklm.google.com", true, true),
-  t("Udio", "AI music generation with realistic vocals", "audio-ai", "freemium", 85, "https://udio.com", true),
-  t("Suno v4", "Latest AI music creation model", "audio-ai", "freemium", 88, "https://suno.com", true, true),
-  t("Hume AI", "Emotionally intelligent voice AI", "audio-ai", "freemium", 78, "https://hume.ai", false, true),
-  t("Sesame AI", "Conversational AI with emotional voice", "audio-ai", "freemium", 76, "https://sesame.com", false, true),
-  t("F5-TTS", "Open-source text-to-speech model", "audio-ai", "free", 72, "https://github.com/SWivid/F5-TTS"),
-
-  // ===================== MORE SEARCH & RESEARCH AI =====================
-  t("Perplexity Pro", "Premium AI search with real-time data", "research-ai", "paid", 93, "https://perplexity.ai", true),
-  t("Consensus", "AI academic research search engine", "research-ai", "freemium", 80, "https://consensus.app"),
-  t("Elicit", "AI research assistant for literature review", "research-ai", "freemium", 82, "https://elicit.com"),
-  t("Semantic Scholar", "AI-powered academic search by Allen AI", "research-ai", "free", 85, "https://semanticscholar.org"),
+  // ===================== ADDITIONAL RESEARCH AI =====================
+  t("Perplexity Pro", "Premium AI search with real-time data", "research-ai", "paid", 93, "https://perplexity.ai/pro", true),
   t("Storm by Stanford", "AI Wikipedia-like article generator", "research-ai", "free", 74, "https://storm.genie.stanford.edu", false, true),
   t("Tavily", "AI search API for LLM applications", "research-ai", "freemium", 73, "https://tavily.com"),
   t("Exa AI", "Neural search engine for developers", "research-ai", "freemium", 75, "https://exa.ai"),
 
-  // ===================== MORE PRODUCTIVITY & AGENTS =====================
-  t("Manus AI", "General-purpose AI agent that delivers results", "ai-agents", "freemium", 87, "https://manus.im", true, true),
-  t("OpenAI Operator", "AI agent that browses the web for you", "ai-agents", "paid", 85, "https://operator.chatgpt.com", true, true),
-  t("Rabbit R1", "AI hardware agent for task automation", "ai-agents", "paid", 72, "https://rabbit.tech"),
-  t("Multion", "AI web agent that automates browser tasks", "ai-agents", "freemium", 74, "https://multion.ai"),
-  t("Induced AI", "AI browser automation agent", "ai-agents", "freemium", 73, "https://induced.ai"),
-  t("Hyperwrite AI", "AI personal writing and browsing assistant", "ai-agents", "freemium", 76, "https://hyperwriteai.com"),
+  // ===================== ADDITIONAL EDUCATION AI =====================
+  t("Duolingo Max", "AI language learning with GPT-4", "education-ai", "paid", 86, "https://duolingo.com/max"),
+  t("Chegg AI", "AI study and homework assistance", "education-ai", "freemium", 74, "https://chegg.com"),
+  t("Course Hero AI", "AI course material and study help", "education-ai", "freemium", 72, "https://coursehero.com"),
 
-  // ===================== MORE 3D & SPATIAL AI =====================
-  t("Meshy", "AI 3D model generation from text and images", "3d-ai", "freemium", 82, "https://meshy.ai", false, true),
-  t("Tripo AI", "Fast AI 3D model generation", "3d-ai", "freemium", 78, "https://tripo3d.ai", false, true),
-  t("Spline AI", "AI-powered 3D design tool", "3d-ai", "freemium", 80, "https://spline.design"),
-  t("Luma Genie", "AI 3D scene generation from text", "3d-ai", "freemium", 77, "https://lumalabs.ai"),
-  t("CSM AI", "AI 3D world generation platform", "3d-ai", "freemium", 74, "https://csm.ai"),
+  // ===================== ADDITIONAL PHOTO EDITING AI =====================
+  t("Topaz Photo AI", "AI photo noise reduction and upscaling", "photo-editing-ai", "free_trial", 86, "https://topazlabs.com/topaz-photo-ai"),
+  t("Magic Eraser", "AI object removal tool", "photo-editing-ai", "freemium", 72, "https://magiceraser.io"),
 
-  // ===================== MORE DOCUMENT & PDF AI =====================
-  t("ChatPDF", "Chat with any PDF document using AI", "document-ai", "freemium", 82, "https://chatpdf.com"),
-  t("Humata", "AI document analysis and Q&A", "document-ai", "freemium", 78, "https://humata.ai"),
-  t("Unriddle", "AI research paper reading assistant", "document-ai", "freemium", 76, "https://unriddle.ai"),
-  t("DocuAsk", "AI-powered document question answering", "document-ai", "freemium", 72, "https://docuask.com"),
-  t("PDF.ai", "Chat with PDF documents using AI", "document-ai", "freemium", 75, "https://pdf.ai"),
+  // ===================== ADDITIONAL 3D AI =====================
+  t("Genie by Luma", "AI 3D object generation", "3d-ai", "freemium", 74, "https://lumalabs.ai/genie"),
+  t("Rodin by Hyper3D", "AI 3D asset generation", "3d-ai", "freemium", 72, "https://hyper3d.ai", false, true),
 
-  // ===================== MORE DATA & ANALYTICS AI =====================
-  t("Julius AI", "AI data analysis and visualization", "data-analytics", "freemium", 82, "https://julius.ai", false, true),
-  t("Obviously AI", "No-code AI predictions and analytics", "data-analytics", "freemium", 76, "https://obviously.ai"),
-  t("Hex AI", "AI-powered data notebooks", "data-analytics", "freemium", 79, "https://hex.tech"),
-  t("MindsDB", "AI tables for database predictions", "data-analytics", "free", 77, "https://mindsdb.com"),
-  t("Akkio", "No-code AI for business analytics", "data-analytics", "freemium", 74, "https://akkio.com"),
-
-  // ===================== MORE TRANSLATION & LANGUAGE AI =====================
-  t("DeepL Write", "AI writing companion with translation", "translation-ai", "freemium", 86, "https://deepl.com/write"),
-  t("Unbabel", "AI-powered enterprise translation", "translation-ai", "paid", 78, "https://unbabel.com"),
-  t("Smartcat", "AI translation management platform", "translation-ai", "freemium", 75, "https://smartcat.com"),
-  t("Phrase", "AI-powered localization platform", "translation-ai", "paid", 76, "https://phrase.com"),
-
-  // ===================== MORE PRESENTATION & SLIDES AI =====================
-  t("Gamma", "AI presentation and document creator", "presentation-ai", "freemium", 85, "https://gamma.app", true),
-  t("SlidesAI", "AI PowerPoint and Google Slides generator", "presentation-ai", "freemium", 78, "https://slidesai.io"),
-  t("Pitch", "AI-powered collaborative presentation tool", "presentation-ai", "freemium", 76, "https://pitch.com"),
-  t("Decktopus", "AI presentation builder", "presentation-ai", "freemium", 74, "https://decktopus.com"),
-
-  // ===================== MORE VOICE & AVATAR AI =====================
-  t("HeyGen", "AI video avatar and voice generation", "avatar-ai", "freemium", 86, "https://heygen.com", true),
-  t("D-ID", "AI digital people and talking avatars", "avatar-ai", "freemium", 82, "https://d-id.com"),
-  t("Synthesia", "AI video generation with digital avatars", "avatar-ai", "paid", 88, "https://synthesia.io", true),
-  t("Colossyan", "AI video with diverse AI avatars", "avatar-ai", "paid", 76, "https://colossyan.com"),
+  // ===================== ADDITIONAL AVATAR AI =====================
+  t("Soul Machines", "Autonomous AI digital people", "avatar-ai", "paid", 78, "https://soulmachines.com"),
+  t("DeepBrain AI", "AI avatar video generation", "avatar-ai", "free_trial", 76, "https://deepbrain.io"),
+  t("NVIDIA Omniverse Avatar", "AI digital human by NVIDIA", "avatar-ai", "free_trial", 82, "https://nvidia.com/en-us/omniverse"),
   t("Tavus", "AI personalized video at scale", "avatar-ai", "paid", 74, "https://tavus.io"),
 
-  // ===================== MORE MEETING & COLLABORATION AI =====================
-  t("Fireflies.ai", "AI meeting transcription and notes", "meeting-ai", "freemium", 84, "https://fireflies.ai"),
-  t("tl;dv", "AI meeting recorder for Google Meet & Zoom", "meeting-ai", "freemium", 80, "https://tldv.io"),
-  t("Fathom", "Free AI meeting assistant", "meeting-ai", "free", 82, "https://fathom.video"),
-  t("Krisp", "AI noise cancellation and meeting notes", "meeting-ai", "freemium", 79, "https://krisp.ai"),
-  t("Tactiq", "Real-time AI meeting transcription", "meeting-ai", "freemium", 75, "https://tactiq.io"),
+  // ===================== ADDITIONAL FINANCE AI =====================
+  t("Alpaca AI", "AI stock trading API", "finance-ai", "freemium", 78, "https://alpaca.markets"),
+  t("Wealthfront AI", "AI automated investing", "finance-ai", "free", 80, "https://wealthfront.com"),
+  t("Betterment AI", "AI robo-advisor for investing", "finance-ai", "freemium", 78, "https://betterment.com"),
 
-  // ===================== MORE SECURITY & SAFETY AI =====================
-  t("Snyk AI", "AI-powered code security scanning", "security-ai", "freemium", 82, "https://snyk.io"),
-  t("Darktrace", "AI cybersecurity threat detection", "security-ai", "paid", 84, "https://darktrace.com"),
-  t("CrowdStrike Charlotte", "AI security analyst", "security-ai", "paid", 83, "https://crowdstrike.com"),
+  // ===================== ADDITIONAL HEALTHCARE AI =====================
+  t("Google Health AI", "AI healthcare research by Google", "healthcare-ai", "free", 82, "https://health.google"),
+  t("Butterfly Network AI", "AI ultrasound imaging", "healthcare-ai", "paid", 72, "https://butterflynetwork.com"),
+
+  // ===================== ADDITIONAL SALES AI =====================
+  t("Clay AI", "AI data enrichment for sales teams", "sales-ai", "free_trial", 80, "https://clay.com", false, true),
+  t("Warmly AI", "AI website visitor identification for sales", "sales-ai", "freemium", 70, "https://warmly.ai"),
+
+  // ===================== ADDITIONAL REAL ESTATE AI =====================
+  t("Matterport AI", "AI 3D virtual property tours", "real-estate-ai", "freemium", 76, "https://matterport.com"),
+  t("Skyline AI", "AI real estate investment analysis", "real-estate-ai", "paid", 72, "https://skyline.ai"),
+
+  // ===================== ADDITIONAL SEO AI =====================
+  t("RankIQ", "AI SEO blog content optimizer", "seo-ai", "paid", 70, "https://rankiq.com"),
+
+  // ===================== ADDITIONAL DATA ANALYSIS =====================
+  t("ChatCSV", "Chat with your CSV data using AI", "data-analysis", "free", 64, "https://chatcsv.co"),
+
+  // ===================== ADDITIONAL LEGAL AI =====================
+  t("CoCounsel", "AI legal assistant by Thomson Reuters", "legal-ai", "paid", 82, "https://casetext.com/cocounsel"),
+
+  // ===================== ADDITIONAL TRANSLATION AI =====================
+  t("DeepL Write", "AI writing companion with translation", "translation-ai", "freemium", 86, "https://deepl.com/write"),
+
+  // ===================== ADDITIONAL SECURITY AI =====================
   t("Protect AI", "AI/ML security platform", "security-ai", "freemium", 74, "https://protectai.com"),
 
-  // ===================== MORE ROBOTICS & HARDWARE AI =====================
+  // ===================== ROBOTICS AI =====================
   t("Figure 02", "AI humanoid robot by Figure AI", "robotics-ai", "paid", 86, "https://figure.ai", true, true),
   t("Tesla Optimus", "Tesla's AI humanoid robot", "robotics-ai", "paid", 88, "https://tesla.com/optimus", true),
   t("Boston Dynamics Spot", "AI-powered robot dog", "robotics-ai", "paid", 82, "https://bostondynamics.com"),
   t("Unitree G1", "Affordable AI humanoid robot", "robotics-ai", "paid", 78, "https://unitree.com", false, true),
   t("1X NEO", "AI humanoid for home assistance", "robotics-ai", "paid", 74, "https://1x.tech", false, true),
 
-  // ===================== MORE OPEN SOURCE AI TOOLS =====================
-  t("Ollama", "Run LLMs locally on your machine", "open-source-ai", "free", 90, "https://ollama.com", true),
-  t("LM Studio", "Discover and run local LLMs", "open-source-ai", "free", 87, "https://lmstudio.ai", true),
-  t("Jan AI", "Open-source ChatGPT alternative runs offline", "open-source-ai", "free", 82, "https://jan.ai"),
+  // ===================== OPEN SOURCE AI =====================
   t("GPT4All", "Free local AI chatbot for any device", "open-source-ai", "free", 80, "https://gpt4all.io"),
   t("LocalAI", "Free open-source OpenAI alternative", "open-source-ai", "free", 76, "https://localai.io"),
   t("Open WebUI", "Self-hosted AI chat interface", "open-source-ai", "free", 84, "https://openwebui.com", false, true),
-  t("AnythingLLM", "All-in-one AI desktop app", "open-source-ai", "free", 78, "https://anythingllm.com"),
   t("LibreChat", "Open-source multi-provider AI chat", "open-source-ai", "free", 75, "https://librechat.ai"),
 
-  // ===================== MORE AI API PLATFORMS =====================
-  t("Together AI", "Fast inference for open-source models", "ai-api", "freemium", 84, "https://together.ai", true),
+  // ===================== AI API PLATFORMS =====================
   t("Groq", "Ultra-fast LLM inference with LPU", "ai-api", "freemium", 88, "https://groq.com", true, true),
-  t("Fireworks AI", "Fast generative AI inference platform", "ai-api", "freemium", 80, "https://fireworks.ai"),
   t("Cerebras", "Fastest AI inference in the world", "ai-api", "freemium", 82, "https://cerebras.ai", true, true),
+  t("Fireworks AI", "Fast generative AI inference platform", "ai-api", "freemium", 80, "https://fireworks.ai"),
   t("SambaNova", "Enterprise AI inference platform", "ai-api", "paid", 76, "https://sambanova.ai"),
   t("Lepton AI", "Build and deploy AI apps fast", "ai-api", "freemium", 74, "https://lepton.ai"),
   t("Modal", "Serverless cloud for AI/ML workloads", "ai-api", "freemium", 78, "https://modal.com"),
   t("Replicate", "Run open-source AI models via API", "ai-api", "freemium", 83, "https://replicate.com"),
   t("Hugging Face", "The AI community hub for models and datasets", "ai-api", "free", 95, "https://huggingface.co", true),
   t("OpenRouter", "Unified API for 100+ AI models", "ai-api", "freemium", 85, "https://openrouter.ai", true),
+  t("Together AI", "Fast inference for open-source models", "ai-api", "freemium", 84, "https://together.ai", true),
 ];

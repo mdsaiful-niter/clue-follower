@@ -1,5 +1,14 @@
 import { Navbar } from "@/components/Navbar";
-import { User, Globe, Heart, Zap, Mail, Github } from "lucide-react";
+import { User, Globe, Heart, Zap, GraduationCap, BookOpen, Keyboard, Calculator, TrendingUp, Target, Wrench, Lightbulb } from "lucide-react";
+
+const projects = [
+  { icon: BookOpen, name: "IPE B Notebook", desc: "A digital academic notebook where all semester notes are organized and stored in one place to help students easily access study materials." },
+  { icon: Keyboard, name: "Typing Master Application", desc: "A typing practice tool designed to help users improve typing speed and accuracy through regular exercises." },
+  { icon: Calculator, name: "Accounting Calculation App", desc: "An application where users can input accounting entries and automatically generate financial statements such as Income Statement and Balance Sheet." },
+  { icon: TrendingUp, name: "Engineering Economy Calculator", desc: "A calculator that allows users to solve engineering economy problems including Present Worth (PW), Future Worth (FW), Annual Worth (AW), and other engineering economic analysis." },
+];
+
+const skills = ["Problem Solving", "Engineering Economy Analysis", "Accounting Calculations", "Educational Tool Development", "Productivity Tool Development"];
 
 const About = () => {
   return (
@@ -13,63 +22,103 @@ const About = () => {
               <User className="h-12 w-12 text-primary" />
             </div>
           </div>
-          <h1 className="text-4xl font-display font-bold text-foreground mb-2">Saiful Islam</h1>
-          <p className="text-primary font-medium text-lg mb-4">Founder & Creator</p>
+          <h1 className="text-4xl font-display font-bold text-foreground mb-2">Md Saiful Islam</h1>
+          <p className="text-primary font-medium text-lg mb-1">Founder & Creator</p>
+          <p className="text-muted-foreground text-sm mb-4">Engineering Student · Tool Developer</p>
           <p className="text-muted-foreground text-lg leading-relaxed max-w-xl mx-auto">
-            Passionate about making AI accessible to everyone. I built this directory to help people discover the best AI tools
-            across every category — from free tools to premium solutions. My mission is to create the most comprehensive
-            AI tools directory on the internet.
+            Md Saiful Islam is a third-year undergraduate student studying B.Sc. in Industrial and Production Engineering
+            at the National Institute of Textile Engineering and Research (NITER), Bangladesh. He is interested in solving
+            real-world problems by developing practical tools and applications for students and engineers.
           </p>
         </div>
 
-        {/* Mission */}
+        {/* Education */}
+        <div className="glass rounded-xl p-6 border border-border/50 mb-8">
+          <div className="flex items-center gap-3 mb-3">
+            <div className="h-10 w-10 rounded-lg bg-primary/20 flex items-center justify-center">
+              <GraduationCap className="h-5 w-5 text-primary" />
+            </div>
+            <h2 className="text-xl font-display font-bold text-foreground">Education</h2>
+          </div>
+          <div className="ml-13 space-y-1">
+            <p className="text-foreground font-semibold">B.Sc. in Industrial and Production Engineering</p>
+            <p className="text-muted-foreground">National Institute of Textile Engineering and Research (NITER)</p>
+            <p className="text-primary text-sm font-medium">Current Status: Third Year Student</p>
+          </div>
+        </div>
+
+        {/* Projects */}
+        <div className="mb-8">
+          <div className="flex items-center gap-3 mb-5">
+            <div className="h-10 w-10 rounded-lg bg-primary/20 flex items-center justify-center">
+              <Lightbulb className="h-5 w-5 text-primary" />
+            </div>
+            <h2 className="text-xl font-display font-bold text-foreground">Projects</h2>
+          </div>
+          <div className="grid gap-4">
+            {projects.map((project) => (
+              <div key={project.name} className="glass rounded-xl p-5 border border-border/50">
+                <div className="flex items-center gap-3 mb-2">
+                  <project.icon className="h-5 w-5 text-primary shrink-0" />
+                  <h3 className="font-display font-bold text-foreground">{project.name}</h3>
+                </div>
+                <p className="text-muted-foreground text-sm leading-relaxed ml-8">{project.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Skills */}
+        <div className="glass rounded-xl p-6 border border-border/50 mb-8">
+          <div className="flex items-center gap-3 mb-4">
+            <div className="h-10 w-10 rounded-lg bg-primary/20 flex items-center justify-center">
+              <Wrench className="h-5 w-5 text-primary" />
+            </div>
+            <h2 className="text-xl font-display font-bold text-foreground">Skills</h2>
+          </div>
+          <div className="flex flex-wrap gap-2">
+            {skills.map((skill) => (
+              <span key={skill} className="px-3 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium border border-primary/20">
+                {skill}
+              </span>
+            ))}
+          </div>
+        </div>
+
+        {/* Mission & Goal */}
         <div className="space-y-8">
+          <div className="glass rounded-xl p-6 border border-border/50">
+            <div className="flex items-center gap-3 mb-3">
+              <div className="h-10 w-10 rounded-lg bg-primary/20 flex items-center justify-center">
+                <Target className="h-5 w-5 text-primary" />
+              </div>
+              <h2 className="text-xl font-display font-bold text-foreground">Goal</h2>
+            </div>
+            <p className="text-muted-foreground leading-relaxed">
+              To develop practical digital tools that simplify engineering calculations, academic learning, and
+              decision-making processes — making technology accessible and useful for students and engineers everywhere.
+            </p>
+          </div>
+
           <div className="glass rounded-xl p-6 border border-border/50">
             <div className="flex items-center gap-3 mb-3">
               <div className="h-10 w-10 rounded-lg bg-primary/20 flex items-center justify-center">
                 <Globe className="h-5 w-5 text-primary" />
               </div>
-              <h2 className="text-xl font-display font-bold text-foreground">Our Mission</h2>
+              <h2 className="text-xl font-display font-bold text-foreground">About This Directory</h2>
             </div>
             <p className="text-muted-foreground leading-relaxed">
-              To build an ocean of AI — the largest, most up-to-date directory of AI tools in the world. We add new tools
-              every day and never remove any. Whether you're looking for free AI tools, freemium options, or premium solutions,
-              we've got you covered.
-            </p>
-          </div>
-
-          <div className="glass rounded-xl p-6 border border-border/50">
-            <div className="flex items-center gap-3 mb-3">
-              <div className="h-10 w-10 rounded-lg bg-primary/20 flex items-center justify-center">
-                <Heart className="h-5 w-5 text-primary" />
-              </div>
-              <h2 className="text-xl font-display font-bold text-foreground">Why This Directory?</h2>
-            </div>
-            <p className="text-muted-foreground leading-relaxed">
-              The AI landscape is growing exponentially. New tools launch every single day, making it hard to keep track.
-              This directory is designed by Saiful Islam to be your one-stop destination — organized by category, pricing,
-              and popularity — so you can find the perfect AI tool in seconds.
-            </p>
-          </div>
-
-          <div className="glass rounded-xl p-6 border border-border/50">
-            <div className="flex items-center gap-3 mb-3">
-              <div className="h-10 w-10 rounded-lg bg-primary/20 flex items-center justify-center">
-                <Zap className="h-5 w-5 text-primary" />
-              </div>
-              <h2 className="text-xl font-display font-bold text-foreground">Always Growing</h2>
-            </div>
-            <p className="text-muted-foreground leading-relaxed">
-              We're committed to keeping this directory the most comprehensive resource available. Tools are added daily,
-              categories are expanded, and no tool is ever removed. Our goal is to be an unlimited ocean of AI tools.
+              This AI tools directory is built to be the most comprehensive resource available. Tools are added daily,
+              categories are expanded, and no tool is ever removed. Whether you're looking for free AI tools, freemium
+              options, or premium solutions, we've got you covered.
             </p>
           </div>
         </div>
 
-        {/* Contact */}
+        {/* Footer */}
         <div className="mt-12 text-center">
           <p className="text-muted-foreground">
-            Built with ❤️ by <span className="text-primary font-semibold">Saiful Islam</span>
+            Built with ❤️ by <span className="text-primary font-semibold">Md Saiful Islam</span>
           </p>
           <p className="text-sm text-muted-foreground mt-2">
             Have a tool to suggest? <a href="/submit" className="text-primary hover:underline">Submit it here</a>

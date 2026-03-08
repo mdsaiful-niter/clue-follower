@@ -12,7 +12,7 @@ const t = (
 
 export const aiTools: AITool[] = [
   // ===================== CHAT AI =====================
-  t("ChatGPT", "Advanced AI chatbot by OpenAI for conversations, coding, and creative tasks", "chat-ai", "freemium", 99, "https://chat.openai.com", true),
+  t("ChatGPT", "Advanced AI chatbot by OpenAI for conversations, coding, and creative tasks", "chat-ai", "freemium", 99, "https://chatgpt.com", true),
   t("Claude", "Anthropic's AI assistant focused on safety and helpfulness", "chat-ai", "freemium", 97, "https://claude.ai", true),
   t("Gemini", "Google's multimodal AI model for text, code, and images", "chat-ai", "freemium", 95, "https://gemini.google.com", true),
   t("Perplexity", "AI-powered search engine with cited answers", "chat-ai", "freemium", 93, "https://perplexity.ai", true),

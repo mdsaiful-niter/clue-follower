@@ -1,4 +1,5 @@
 import { Navbar } from "@/components/Navbar";
+import founderImage from "@/assets/founder.jpg";
 import { User, Globe, Heart, Zap, GraduationCap, BookOpen, Keyboard, Calculator, TrendingUp, Target, Wrench, Lightbulb } from "lucide-react";
 
 const projects = [

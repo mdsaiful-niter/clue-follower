@@ -7,6 +7,7 @@ import { Navbar } from "@/components/Navbar";
 import Index from "./pages/Index";
 import Categories from "./pages/Categories";
 import SubmitTool from "./pages/SubmitTool";
+import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -21,6 +22,7 @@ const App = () => (
           <Route path="/" element={<><Navbar /><Index /></>} />
           <Route path="/categories" element={<Categories />} />
           <Route path="/submit" element={<SubmitTool />} />
+          <Route path="/about" element={<About />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

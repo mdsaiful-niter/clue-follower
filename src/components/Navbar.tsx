@@ -21,6 +21,11 @@ export function Navbar() {
               Categories
             </Button>
           </Link>
+          <Link to="/about">
+            <Button variant="ghost" size="sm" className={location.pathname === "/about" ? "text-primary" : "text-muted-foreground"}>
+              About
+            </Button>
+          </Link>
           <Link to="/submit">
             <Button size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90">
               <Plus className="h-4 w-4 mr-1" /> Submit Tool

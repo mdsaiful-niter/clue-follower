@@ -6,6 +6,7 @@ import { FilterBar } from "@/components/FilterBar";
 import { ToolCard } from "@/components/ToolCard";
 import { useToolsFilter } from "@/hooks/useToolsFilter";
 import { Button } from "@/components/ui/button";
+import { SeedButton } from "@/components/SeedButton";
 
 const Index = () => {
   const {
@@ -127,6 +128,9 @@ const Index = () => {
           <p>Doraemon's Poket — Discover {totalTools}+ AI Tools across {categoriesWithCount.length} categories</p>
           <p className="mt-2 text-[10px] sm:text-xs">Updated daily with new AI tools. No tool is ever removed.</p>
           <p className="mt-2 text-[10px] sm:text-xs">Created by <a href="/about" className="text-primary hover:underline font-medium">Saiful Islam</a></p>
+          <div className="mt-4">
+            <SeedButton />
+          </div>
         </div>
       </footer>
     </div>

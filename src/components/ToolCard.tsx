@@ -72,7 +72,7 @@ export function ToolCard({ tool, index = 0 }: ToolCardProps) {
             <span>{tool.popularityScore}</span>
           </div>
         </div>
-        <ExternalLink className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors" />
+        
       </div>
     </motion.a>
   );

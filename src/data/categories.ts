@@ -41,4 +41,10 @@ export const categories: Category[] = [
   { id: "food-ai", name: "Food & Recipe AI", icon: "🍳", toolCount: 0, description: "AI cooking and nutrition tools" },
   { id: "travel-ai", name: "Travel AI", icon: "✈️", toolCount: 0, description: "AI travel planning and booking" },
   { id: "fitness-ai", name: "Fitness AI", icon: "💪", toolCount: 0, description: "AI fitness and wellness tools" },
+  { id: "video-ai", name: "Video AI", icon: "📹", toolCount: 0, description: "AI video creation and generation" },
+  { id: "data-analytics", name: "Data Analytics AI", icon: "📊", toolCount: 0, description: "AI data analysis and visualization" },
+  { id: "security-ai", name: "Security AI", icon: "🛡️", toolCount: 0, description: "AI cybersecurity and code security" },
+  { id: "robotics-ai", name: "Robotics AI", icon: "🦾", toolCount: 0, description: "AI humanoid robots and automation" },
+  { id: "open-source-ai", name: "Open Source AI", icon: "🔓", toolCount: 0, description: "Run AI models locally and offline" },
+  { id: "ai-api", name: "AI API Platforms", icon: "🔌", toolCount: 0, description: "AI model hosting and inference APIs" },
 ];

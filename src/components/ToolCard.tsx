@@ -48,8 +48,17 @@ export function ToolCard({ tool, index = 0 }: ToolCardProps) {
       )}
 
       <div className="flex items-start gap-4">
-        <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-secondary text-sm font-bold text-primary font-display">
-          {initials}
+        <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-secondary overflow-hidden">
+          <img
+            src={`https://www.google.com/s2/favicons?domain=${new URL(tool.websiteUrl).hostname}&sz=64`}
+            alt={`${tool.name} logo`}
+            className="h-8 w-8 object-contain"
+            onError={(e) => {
+              const target = e.currentTarget;
+              target.style.display = 'none';
+              target.parentElement!.innerHTML = `<span class="text-sm font-bold text-primary font-display">${tool.name.split(" ").map(w => w[0]).join("").slice(0, 2).toUpperCase()}</span>`;
+            }}
+          />
         </div>
         <div className="flex-1 min-w-0">
           <h3 className="font-display font-semibold text-foreground truncate">{tool.name}</h3>

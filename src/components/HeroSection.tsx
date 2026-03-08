@@ -18,7 +18,7 @@ export function HeroSection() {
         >
           <div className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-3 sm:px-4 py-1 sm:py-1.5 mb-4 sm:mb-6">
             <Sparkles className="h-3.5 w-3.5 sm:h-4 sm:w-4 text-primary" />
-            <span className="text-xs sm:text-sm text-primary font-medium">500+ AI Tools Directory</span>
+            <span className="text-xs sm:text-sm text-primary font-medium">Doraemon's Poket — 500+ AI Tools</span>
           </div>
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-display font-bold tracking-tight leading-tight">
             Discover The Best{" "}

@@ -124,7 +124,7 @@ const Index = () => {
       {/* Footer */}
       <footer className="border-t border-border/50 py-6 sm:py-8">
         <div className="container mx-auto px-4 text-center text-xs sm:text-sm text-muted-foreground">
-          <p>AI Directory — Discover {totalTools}+ AI Tools across {categoriesWithCount.length} categories</p>
+          <p>Doraemon's Poket — Discover {totalTools}+ AI Tools across {categoriesWithCount.length} categories</p>
           <p className="mt-2 text-[10px] sm:text-xs">Updated daily with new AI tools. No tool is ever removed.</p>
           <p className="mt-2 text-[10px] sm:text-xs">Created by <a href="/about" className="text-primary hover:underline font-medium">Saiful Islam</a></p>
         </div>

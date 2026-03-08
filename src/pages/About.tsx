@@ -19,8 +19,8 @@ const About = () => {
         {/* Owner Section */}
         <div className="glass rounded-2xl p-8 md:p-12 mb-12 border border-border/50 text-center">
           <div className="flex justify-center mb-6">
-            <div className="h-24 w-24 rounded-full bg-primary/20 border-2 border-primary flex items-center justify-center">
-              <User className="h-12 w-12 text-primary" />
+            <div className="h-28 w-28 rounded-full border-2 border-primary overflow-hidden">
+              <img src={founderImage} alt="Md Saiful Islam" className="h-full w-full object-cover" />
             </div>
           </div>
           <h1 className="text-4xl font-display font-bold text-foreground mb-2">Md Saiful Islam</h1>

@@ -46,7 +46,7 @@ const Index = () => {
           <CategoryGrid
             categories={categoriesWithCount}
             selectedCategory={selectedCategory}
-            onSelect={setSelectedCategory}
+            onSelect={handleCategorySelect}
           />
         </section>
 

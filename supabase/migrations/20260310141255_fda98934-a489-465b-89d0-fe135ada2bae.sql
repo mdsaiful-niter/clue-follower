@@ -1,0 +1,1 @@
+ALTER TABLE ai_tools ADD CONSTRAINT ai_tools_name_website_unique UNIQUE (name, website_url);

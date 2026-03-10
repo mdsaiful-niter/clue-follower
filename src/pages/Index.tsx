@@ -51,7 +51,7 @@ const Index = () => {
         </section>
 
         {isFiltering ? (
-          <section>
+          <section ref={toolsRef}>
             <FilterBar
               sortBy={sortBy}
               onSortChange={setSortBy}

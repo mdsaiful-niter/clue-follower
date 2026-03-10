@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef, useCallback } from "react";
 import { HeroSection } from "@/components/HeroSection";
 import { SearchBar } from "@/components/SearchBar";
 import { CategoryGrid } from "@/components/CategoryGrid";
@@ -21,6 +21,16 @@ const Index = () => {
   const [showAllTrending, setShowAllTrending] = useState(false);
   const [showAllTop, setShowAllTop] = useState(false);
   const [showAllNew, setShowAllNew] = useState(false);
+  const toolsRef = useRef<HTMLDivElement>(null);
+
+  const handleCategorySelect = useCallback((id: string | null) => {
+    setSelectedCategory(id);
+    if (id && toolsRef.current) {
+      setTimeout(() => {
+        toolsRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+      }, 100);
+    }
+  }, [setSelectedCategory]);
 
   const isFiltering = searchQuery || selectedCategory || pricingFilter;
 
@@ -36,12 +46,12 @@ const Index = () => {
           <CategoryGrid
             categories={categoriesWithCount}
             selectedCategory={selectedCategory}
-            onSelect={setSelectedCategory}
+            onSelect={handleCategorySelect}
           />
         </section>
 
         {isFiltering ? (
-          <section>
+          <section ref={toolsRef}>
             <FilterBar
               sortBy={sortBy}
               onSortChange={setSortBy}

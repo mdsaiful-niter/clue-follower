@@ -21,6 +21,16 @@ const Index = () => {
   const [showAllTrending, setShowAllTrending] = useState(false);
   const [showAllTop, setShowAllTop] = useState(false);
   const [showAllNew, setShowAllNew] = useState(false);
+  const toolsRef = useRef<HTMLDivElement>(null);
+
+  const handleCategorySelect = useCallback((id: string | null) => {
+    setSelectedCategory(id);
+    if (id && toolsRef.current) {
+      setTimeout(() => {
+        toolsRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+      }, 100);
+    }
+  }, [setSelectedCategory]);
 
   const isFiltering = searchQuery || selectedCategory || pricingFilter;
 

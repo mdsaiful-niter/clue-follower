@@ -25,10 +25,10 @@ const Index = () => {
 
   const handleCategorySelect = useCallback((id: string | null) => {
     setSelectedCategory(id);
-    if (id && toolsRef.current) {
+    if (id) {
       setTimeout(() => {
         toolsRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
-      }, 100);
+      }, 150);
     }
   }, [setSelectedCategory]);
 

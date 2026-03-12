@@ -1,4 +1,4 @@
-import { useState, useRef, useCallback } from "react";
+import { useState, useRef, useCallback, useEffect } from "react";
 import { HeroSection } from "@/components/HeroSection";
 import { SearchBar } from "@/components/SearchBar";
 import { CategoryGrid } from "@/components/CategoryGrid";
@@ -23,17 +23,30 @@ const Index = () => {
   const [showAllNew, setShowAllNew] = useState(false);
   const toolsRef = useRef<HTMLDivElement>(null);
   const allToolsRef = useRef<HTMLDivElement>(null);
+  const pendingScrollTargetRef = useRef<"filtered" | "all" | null>(null);
 
   const handleCategorySelect = useCallback((id: string | null) => {
+    const target = id ? toolsRef.current : allToolsRef.current;
+
+    if (id === selectedCategory) {
+      target?.scrollIntoView({ behavior: "smooth", block: "start" });
+      return;
+    }
+
+    pendingScrollTargetRef.current = id ? "filtered" : "all";
     setSelectedCategory(id);
-    // Use requestAnimationFrame + setTimeout to ensure DOM has updated
-    requestAnimationFrame(() => {
-      setTimeout(() => {
-        const target = id ? toolsRef.current : allToolsRef.current;
-        target?.scrollIntoView({ behavior: "smooth", block: "start" });
-      }, 50);
-    });
-  }, [setSelectedCategory]);
+  }, [selectedCategory, setSelectedCategory]);
+
+  useEffect(() => {
+    const targetType = pendingScrollTargetRef.current;
+    if (!targetType) return;
+
+    const target = targetType === "filtered" ? toolsRef.current : allToolsRef.current;
+    if (!target) return;
+
+    target.scrollIntoView({ behavior: "smooth", block: "start" });
+    pendingScrollTargetRef.current = null;
+  }, [selectedCategory]);
 
   const isFiltering = searchQuery || selectedCategory || pricingFilter;
 

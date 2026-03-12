@@ -116,7 +116,7 @@ const Index = () => {
             </section>
 
             {/* ALL TOOLS */}
-            <section>
+            <section ref={allToolsRef}>
               <h2 className="text-lg sm:text-xl md:text-2xl font-display font-bold text-foreground mb-4 sm:mb-6">🌊 All AI Tools ({totalTools})</h2>
               <FilterBar
                 sortBy={sortBy}

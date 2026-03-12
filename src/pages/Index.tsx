@@ -22,14 +22,17 @@ const Index = () => {
   const [showAllTop, setShowAllTop] = useState(false);
   const [showAllNew, setShowAllNew] = useState(false);
   const toolsRef = useRef<HTMLDivElement>(null);
+  const allToolsRef = useRef<HTMLDivElement>(null);
 
   const handleCategorySelect = useCallback((id: string | null) => {
     setSelectedCategory(id);
-    if (id) {
+    // Use requestAnimationFrame + setTimeout to ensure DOM has updated
+    requestAnimationFrame(() => {
       setTimeout(() => {
-        toolsRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
-      }, 150);
-    }
+        const target = id ? toolsRef.current : allToolsRef.current;
+        target?.scrollIntoView({ behavior: "smooth", block: "start" });
+      }, 50);
+    });
   }, [setSelectedCategory]);
 
   const isFiltering = searchQuery || selectedCategory || pricingFilter;
